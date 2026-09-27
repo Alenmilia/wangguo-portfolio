@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王果 · 新媒体作品集 — 把想法做成流量</title>
+<meta name="description" content="王果，广告学本科 · 新媒体运营/内容运营（成都）· 作业帮直播内容实习生。短视频、公众号、直播物料、AI 提效工具、包装设计作品集。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23191209'/%3E%3Cpath d='M14 46 L22 18 L32 36 L42 18 L50 46' stroke='url(%23g)' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FF4D12'/%3E%3Cstop offset='1' stop-color='%232456F5'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+/* ============ tokens ============ */
+:root{
+  --cream:#F6EEE0;
+  --paper:#FFF9F0;
+  --ink:#1B130C;
+  --ink-2:#54483C;
+  --line:#1B130C;
+  --orange:#FF4D12;
+  --pink:#FF2E88;
+  --blue:#2456F5;
+  --cyan:#00C2FF;
+  --lime:#C8F531;
+  --yellow:#FFC93C;
+  --g-orange-pink:linear-gradient(100deg,#FF4D12 0%,#FF2E88 100%);
+  --g-blue-cyan:linear-gradient(100deg,#2456F5 0%,#00C2FF 100%);
+  --g-amber:linear-gradient(100deg,#FF9D00 0%,#FF4D12 100%);
+  --g-ink:linear-gradient(100deg,#1B130C,#4A3B2E);
+  --shadow-hard:6px 6px 0 var(--ink);
+  --shadow-hard-sm:3px 3px 0 var(--ink);
+  --ease-out:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans SC",-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{ /* 纸感噪点 */
+  content:"";position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.num{font-family:"Space Grotesk","Noto Sans SC",monospace;font-feature-settings:"tnum" 1}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+/* ============ layout helpers ============ */
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+section{position:relative;padding:110px 0}
+.ghost{
+  position:absolute;top:26px;left:0;right:0;text-align:center;z-index:0;pointer-events:none;
+  font-family:"Space Grotesk","Noto Sans SC",sans-serif;font-weight:700;
+  font-size:clamp(72px,11vw,150px);line-height:1;letter-spacing:.04em;
+  color:transparent;-webkit-text-stroke:1.5px rgba(27,19,12,.14);
+  user-select:none;white-space:nowrap;
+}
+.sec-head{position:relative;z-index:1;margin-bottom:56px}
+.sec-head .kick{
+  display:inline-flex;align-items:center;gap:10px;
+  font-weight:700;font-size:14px;letter-spacing:.14em;
+  padding:6px 16px;border:2px solid var(--ink);border-radius:999px;background:var(--paper);
+}
+.sec-head .kick .dot{width:10px;height:10px;border-radius:50%;background:var(--g-orange-pink)}
+.sec-head h2{font-size:clamp(34px,4.6vw,56px);font-weight:900;line-height:1.16;margin-top:18px;letter-spacing:-.01em}
+.sec-head .sub{color:var(--ink-2);font-size:16px;margin-top:10px;max-width:640px}
+.grad-text{background:var(--g-orange-pink);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad-text.blue{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text}
+
+/* ============ nav ============ */
+.nav{
+  position:sticky;top:0;z-index:100;background:var(--cream);
+  border-bottom:2px solid var(--ink);
+}
+.nav-in{max-width:1240px;margin:0 auto;padding:0 28px;height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px}
+.logo-mark{
+  width:34px;height:34px;border-radius:10px;background:var(--ink);display:grid;place-items:center;
+  color:var(--cream);font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:17px;
+}
+.logo .lv{color:var(--ink-2);font-weight:500;font-size:13px;display:none}
+@media(min-width:640px){.logo .lv{display:inline}}
+.nav-links{display:flex;align-items:center;gap:4px;list-style:none}
+.nav-links a{
+  padding:8px 14px;font-weight:700;font-size:15px;border-radius:10px;position:relative;
+  transition:background .2s,color .2s;
+}
+.nav-links a:hover{background:var(--yellow)}
+.nav-links a.on{color:var(--orange)}
+.nav-badge{
+  font-weight:700;font-size:13px;padding:7px 14px;border-radius:999px;color:#fff;
+  background:var(--g-orange-pink);box-shadow:var(--shadow-hard-sm);white-space:nowrap;
+}
+.nav-burger{display:none;width:44px;height:44px;border:2px solid var(--ink);border-radius:12px;background:var(--paper);flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.nav-burger span{width:20px;height:2.5px;background:var(--ink);border-radius:2px;transition:.25s}
+.nav.open .nav-burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav.open .nav-burger span:nth-child(2){opacity:0}
+.nav.open .nav-burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media(max-width:860px){
+  .nav-links{
+    position:fixed;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--cream);border-bottom:2px solid var(--ink);padding:10px 20px 18px;
+    display:none;
+  }
+  .nav.open .nav-links{display:flex}
+  .nav-links a{padding:13px 8px;border-bottom:1px dashed rgba(27,19,12,.2);border-radius:0}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-burger{display:flex}
+  .nav-badge{display:none}
+}
+
+/* ============ hero ============ */
+.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:74px 0 0}
+.hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-bg .hgrid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(27,19,12,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(27,19,12,.055) 1px,transparent 1px);
+  background-size:72px 72px;
+  -webkit-mask-image:radial-gradient(ellipse 90% 82% at 70% 20%,#000 28%,transparent 78%);
+  mask-image:radial-gradient(ellipse 90% 82% at 70% 20%,#000 28%,transparent 78%);
+}
+.hring{position:absolute;border:1.5px solid rgba(27,19,12,.17);border-radius:50%;animation:spin 46s linear infinite}
+.hring::after{content:"";position:absolute;top:-5px;left:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.hring.r1{width:760px;height:760px;right:-170px;top:-230px}
+.hring.r2{width:470px;height:470px;left:-140px;bottom:-180px;border-style:dashed;animation-duration:72s;animation-direction:reverse}
+.hring.r2::after{top:auto;bottom:-5px;left:auto;right:calc(50% - 4px);background:var(--blue)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.28fr .72fr;gap:56px;align-items:center}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:"Space Grotesk","Noto Sans SC",sans-serif;font-weight:500;
+  font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);
+}
+.hero-eyebrow .erule{width:44px;height:2px;background:var(--ink)}
+.hero-eyebrow .edot{width:7px;height:7px;border-radius:50%;background:var(--g-orange-pink)}
+.hero h1{
+  margin-top:30px;font-weight:900;letter-spacing:-.03em;line-height:1.02;
+  font-size:clamp(54px,9vw,118px);
+}
+.hero h1 .line{display:block;text-wrap:balance}
+.hero h1 .hl{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.word-rotator{position:relative;display:inline-block;overflow:hidden;height:1.06em;vertical-align:bottom}
+.word-rotator .word{
+  display:block;padding:.06em .06em .16em;
+  background:var(--g-orange-pink);-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:wordCycle 9.6s var(--ease-out) infinite;
+}
+.word-rotator .w1{animation-delay:2.4s}
+.word-rotator .w2{animation-delay:4.8s}
+.word-rotator .w3{animation-delay:7.2s}
+@keyframes wordCycle{
+  0%{opacity:0;transform:translateY(1.15em)}
+  11%{opacity:1;transform:translateY(0)}
+  72%{opacity:1;transform:translateY(0)}
+  86%{opacity:0;transform:translateY(-1.15em)}
+  100%{opacity:0;transform:translateY(-1.15em)}
+}
+@media(prefers-reduced-motion:reduce){
+  .word-rotator{overflow:visible}
+  .word-rotator .word:nth-child(n+2){display:none}
+}
+.hero-desc{margin-top:28px;font-size:16.5px;color:var(--ink-2);max-width:560px;line-height:1.85}
+.hero-desc b{color:var(--ink)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:16px;
+  padding:15px 30px;border-radius:999px;border:2px solid var(--ink);
+  transition:transform .25s var(--ease-out),box-shadow .25s,background .2s,color .2s;
+  will-change:transform;
+}
+.btn-main{background:var(--ink);color:var(--cream);box-shadow:var(--shadow-hard)}
+.btn-main:hover{box-shadow:9px 9px 0 var(--ink);background:var(--g-orange-pink);color:#fff}
+.btn-ghost{background:var(--paper);box-shadow:var(--shadow-hard-sm)}
+.btn-ghost:hover{box-shadow:6px 6px 0 var(--ink);background:var(--yellow)}
+.btn .arr{font-family:"Space Grotesk",sans-serif;transition:transform .25s var(--ease-out)}
+.btn:hover .arr{transform:translateX(4px)}
+.hero-panel{position:relative;display:flex;flex-direction:column;align-items:flex-end;gap:26px}
+.hpanel{
+  width:min(348px,100%);border:2px solid var(--ink);border-radius:18px;background:var(--paper);
+  box-shadow:var(--shadow-hard);overflow:hidden;position:relative;
+}
+.hpanel::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--g-orange-pink)}
+.hpanel-head{
+  display:flex;justify-content:space-between;align-items:center;padding:14px 18px;
+  border-bottom:1.5px solid rgba(27,19,12,.16);
+  font-size:11.5px;font-weight:700;letter-spacing:.16em;color:var(--ink-2);
+  font-family:"Space Grotesk","Noto Sans SC",sans-serif;
+}
+.hpanel-head .ld{display:inline-flex;align-items:center;gap:7px}
+.hpanel-head .ld::before{content:"";width:8px;height:8px;border-radius:50%;background:#00C26B;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,194,107,.45)}55%{box-shadow:0 0 0 7px rgba(0,194,107,0)}}
+.hp-row{display:grid;grid-template-columns:34px 1fr;gap:8px;padding:15px 18px;border-bottom:1.5px dashed rgba(27,19,12,.15);transition:background .25s}
+.hp-row:hover{background:#FFF1DE}
+.hp-row:last-of-type{border-bottom:none}
+.hp-idx{font-family:"Space Grotesk",sans-serif;font-size:12px;color:var(--ink-2);padding-top:5px}
+.hp-num{font-family:"Space Grotesk","Noto Sans SC",sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-.02em}
+.hp-num .u{font-size:16px;background:var(--g-orange-pink);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hp-num.u2 .u{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hp-label{font-size:12.5px;color:var(--ink-2);font-weight:500;margin-top:3px}
+.hpanel-foot{
+  padding:12px 18px;background:var(--ink);color:var(--cream);
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:"Space Grotesk",sans-serif;font-size:11px;letter-spacing:.14em;
+}
+.rbadge{position:relative;width:152px;height:152px;margin-right:14px}
+.rbadge svg{width:100%;height:100%;animation:spin 22s linear infinite}
+.rbadge text{font-family:"Space Grotesk","Noto Sans SC",sans-serif;font-size:13px;font-weight:700;letter-spacing:.3em;fill:var(--ink)}
+.rbadge-core{position:absolute;inset:0;display:grid;place-items:center;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:32px;background:var(--g-orange-pink);-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes heroUp{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+.hero .u1{animation:heroUp .8s var(--ease-out) .05s both}
+.hero .u2{animation:heroUp .8s var(--ease-out) .18s both}
+.hero .u3{animation:heroUp .8s var(--ease-out) .3s both}
+.hero .u4{animation:heroUp .8s var(--ease-out) .42s both}
+@media(max-width:980px){
+  .hero{min-height:auto;padding:60px 0 36px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-panel{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .rbadge{margin-right:0;width:132px;height:132px}
+  .hpanel{flex:1 1 260px}
+}
+@media(max-width:520px){
+  .hring.r1{width:460px;height:460px;right:-120px;top:-120px}
+  .hring.r2{width:300px;height:300px;left:-100px;bottom:-120px}
+}
+
+/* ============ 滚动进度条 ============ */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--g-orange-pink);z-index:999;border-radius:0 3px 3px 0}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);background:var(--ink);color:var(--cream);padding:13px 24px;border-radius:999px;font-size:14px;font-weight:700;box-shadow:var(--shadow-hard);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:1001;max-width:92vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ============ marquee ============ */
+.marquee{margin-top:64px;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--ink);color:var(--cream);overflow:hidden;position:relative;z-index:1}
+.mq-track{display:flex;gap:0;width:max-content;animation:mq 22s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-item{display:flex;align-items:center;gap:26px;padding:15px 0;font-weight:700;font-size:clamp(15px,1.7vw,21px);white-space:nowrap;letter-spacing:.05em;color:rgba(255,255,255,.94)}
+.mq-item::after{content:"／";font-family:"Space Grotesk",sans-serif;color:rgba(255,255,255,.32);font-weight:400}
+.mq-item .star{color:var(--yellow);font-family:"Space Grotesk",sans-serif}
+.mq-item .alt{color:var(--lime)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq-dupe{display:flex}
+/* ============ stats ============ */
+.stats{border:2px solid var(--ink);border-radius:22px;background:var(--paper);box-shadow:var(--shadow-hard);display:grid;grid-template-columns:repeat(6,1fr);overflow:hidden;position:relative;z-index:1}
+.stat{padding:30px 22px;border-right:1.5px solid rgba(27,19,12,.18);text-align:center;position:relative;transition:background .25s}
+.stat::before{content:"";position:absolute;top:0;left:18px;right:18px;height:4px;background:var(--g-orange-pink);opacity:0;transition:opacity .25s}
+.stat:hover{background:#FFF1DE}
+.stat:hover::before{opacity:1}
+.stat:last-child{border-right:none}
+.stat .n{font-family:"Space Grotesk","Noto Sans SC",sans-serif;font-weight:700;font-size:clamp(34px,3.4vw,48px);line-height:1;letter-spacing:-.02em;display:inline-block;transition:transform .25s var(--ease-out)}
+.stat:hover .n{transform:translateY(-3px) scale(1.05)}
+.stat .l{font-weight:700;font-size:14.5px;margin-top:10px}
+.stat .d{font-size:12px;color:var(--ink-2);margin-top:4px;line-height:1.45}
+.stat:nth-child(1) .n{background:var(--g-orange-pink);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(2) .n{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(3) .n{background:var(--g-amber);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(4) .n{background:var(--g-orange-pink);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(5) .n{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-child(6) .n{background:var(--g-amber);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(max-width:1080px){.stats{grid-template-columns:repeat(3,1fr)}.stat:nth-child(3){border-right:none}.stat:nth-child(n+4){border-top:1.5px solid rgba(27,19,12,.18)}}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2n){border-right:none}.stat:nth-child(3){border-top:1.5px solid rgba(27,19,12,.18)}.stat:nth-child(n+3){border-top:1.5px solid rgba(27,19,12,.18)}}
+
+/* ============ works ============ */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;position:relative;z-index:1}
+.filter{
+  border:2px solid var(--ink);background:var(--paper);border-radius:999px;
+  padding:9px 20px;font-weight:700;font-size:14.5px;transition:transform .2s,box-shadow .2s,background .2s,color .2s;
+}
+.filter:hover{transform:translate(-2px,-2px);box-shadow:var(--shadow-hard-sm);background:var(--yellow)}
+.filter.on{background:var(--ink);color:var(--cream)}
+.works-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px;position:relative;z-index:1}
+.wc{grid-column:span 4;background:var(--paper);border:2px solid var(--ink);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out)}
+.wc.wide{grid-column:span 6}
+.wc.tall{grid-column:span 6}
+.wc.c7{grid-column:span 7}
+.wc.c5{grid-column:span 5}
+.wc.c12{grid-column:span 12}
+.wc:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow-hard)}
+.wc.hide{display:none}
+.wc-media{position:relative;overflow:hidden;background:#120c08;cursor:pointer}
+.wc-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,12,6,.55));pointer-events:none;opacity:0;transition:opacity .3s}
+.wc:hover .wc-media::after{opacity:1}
+.wc-media img,.wc-media video{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease-out)}
+.wc:hover .wc-media img,.wc:hover .wc-media video{transform:scale(1.045)}
+.wc-media .ratio{aspect-ratio:4/3;display:block}
+.wc-media .ratio.r169{aspect-ratio:16/9}
+.wc-media .ratio.rv{aspect-ratio:9/14}
+.wc-media .ratio.rw{aspect-ratio:3/1}
+.wc-media.no-click{cursor:default}
+.play-badge{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
+  width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);
+  display:grid;place-items:center;font-size:22px;transition:transform .25s var(--ease-out),background .2s;
+  box-shadow:0 4px 18px rgba(0,0,0,.28);
+}
+.wc-media:hover .play-badge{transform:translate(-50%,-50%) scale(1.12);background:var(--lime)}
+.play-badge svg{width:22px;height:22px;margin-left:3px}
+.wc-tag{
+  position:absolute;top:14px;left:14px;z-index:2;font-weight:700;font-size:12px;
+  color:#fff;padding:5px 12px;border-radius:999px;letter-spacing:.04em;
+}
+.t-video{background:var(--g-blue-cyan)}
+.t-live{background:var(--g-amber)}
+.t-tool{background:#1d8a4e}
+.t-design{background:var(--g-orange-pink)}
+.t-ops{background:#33302b}
+.wc-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.wc-meta{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.wc-name{font-size:12px;font-weight:700;color:var(--ink-2);letter-spacing:.06em}
+.wc-title{font-weight:900;font-size:18px;line-height:1.35}
+.wc-desc{font-size:13.5px;color:var(--ink-2);flex:1}
+.wc-stat{
+  display:inline-flex;align-items:center;gap:6px;width:max-content;
+  font-weight:700;font-size:12.5px;background:var(--lime);border:1.5px solid var(--ink);
+  border-radius:999px;padding:4px 12px;margin-top:10px;
+}
+.wc-stat.blue{background:#BFE3FF}
+.wc-stat.amber{background:#FFE3B3}
+@media(max-width:1080px){.wc,.wc.wide,.wc.tall,.wc.c7,.wc.c5,.wc.c12{grid-column:span 6}}
+@media(max-width:640px){.wc,.wc.wide,.wc.tall,.wc.c7,.wc.c5,.wc.c12{grid-column:span 12}}
+
+/* ============ tool feature ============ */
+.tool-feature{border:2px solid var(--ink);border-radius:22px;background:var(--paper);box-shadow:var(--shadow-hard);display:grid;grid-template-columns:1.05fr 1fr;overflow:hidden;position:relative;z-index:1}
+.tool-left{padding:40px 38px;display:flex;flex-direction:column;gap:16px}
+.tool-left h3{font-size:clamp(26px,3vw,36px);font-weight:900;line-height:1.2}
+.tool-left .tld{color:var(--ink-2);font-size:15px}
+.tool-points{display:grid;gap:12px;margin-top:6px}
+.tp{display:flex;gap:12px;align-items:flex-start;border:1.5px solid rgba(27,19,12,.22);border-radius:14px;padding:12px 16px;background:#fff}
+.tp .ico{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:900;font-size:15px;color:#fff}
+.tp .t{font-weight:700;font-size:14.5px}
+.tp .s{font-size:12.5px;color:var(--ink-2)}
+.tool-right{background:#0f1117;border-left:2px solid var(--ink);position:relative;min-height:420px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;padding:20px}
+.tool-right iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.tool-fallback{color:#8b8fa3;font-size:13px;text-align:center;padding:0 24px;display:none}
+.tool-link{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--cream);background:var(--ink);padding:12px 22px;border-radius:999px;transition:transform .2s,box-shadow .2s;box-shadow:var(--shadow-hard-sm)}
+.tool-link:hover{transform:translate(-2px,-2px);box-shadow:var(--shadow-hard);background:var(--g-blue-cyan)}
+@media(max-width:900px){.tool-feature{grid-template-columns:1fr}.tool-right{border-left:none;border-top:2px solid var(--ink);min-height:380px}}
+
+/* ============ design gallery ============ */
+.brand-bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px;position:relative;z-index:1}
+.brand-bar .bname{font-weight:900;font-size:26px}
+.brand-bar .bcount{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:14px;border:1.5px solid var(--ink);border-radius:999px;padding:4px 14px;background:var(--paper)}
+.brand-bar .bdesc{font-size:13.5px;color:var(--ink-2)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative;z-index:1}
+.g-item{border:2px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--paper);cursor:zoom-in;position:relative;aspect-ratio:4/3;transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out)}
+.g-item.feat{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease-out)}
+.g-item:hover{transform:translate(-2px,-2px);box-shadow:var(--shadow-hard-sm)}
+.g-item:hover img{transform:scale(1.05)}
+.g-item .g-cap{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 10px;background:linear-gradient(180deg,transparent,rgba(18,10,4,.78));color:#fff;font-size:12.5px;font-weight:500;opacity:0;transition:opacity .3s}
+.g-item:hover .g-cap{opacity:1}
+@media(max-width:980px){.gallery{grid-template-columns:repeat(2,1fr)}.g-item.feat{grid-column:span 2}}
+@media(max-width:560px){.gallery{grid-template-columns:1fr}.g-item.feat{grid-column:span 1}}
+
+/* ============ ops strip ============ */
+.ops-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;position:relative;z-index:1}
+.ops-card{border:2px solid var(--ink);border-radius:20px;background:var(--paper);overflow:hidden;display:flex;flex-direction:column}
+.ops-card .oc-body{padding:22px 24px}
+.ops-card h3{font-weight:900;font-size:20px}
+.ops-card .oc-desc{font-size:14px;color:var(--ink-2);margin-top:8px}
+.ops-stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.ops-stat{background:#fff;border:1.5px solid var(--ink);border-radius:12px;padding:10px 16px;text-align:center}
+.ops-stat .n{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;background:var(--g-orange-pink);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ops-stat .l{font-size:11.5px;color:var(--ink-2);font-weight:500}
+.strip{display:flex;gap:14px;overflow-x:auto;padding:22px 22px 18px;scroll-snap-type:x mandatory}
+.strip-item{flex:0 0 auto;width:200px;border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;background:#fff;scroll-snap-align:start;cursor:zoom-in}
+.strip-item img{width:100%;aspect-ratio:9/16;object-fit:cover}
+.strip-item .sc{font-size:12px;font-weight:700;padding:8px 10px;text-align:center}
+.gzh-card{border:2px solid var(--ink);border-radius:20px;background:var(--paper);overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;gap:0}
+.gzh-card .gzh-img{position:relative;max-height:560px;overflow:hidden;cursor:zoom-in}
+.gzh-card .gzh-img img{width:100%;height:100%;object-fit:cover;object-position:top}
+.gzh-card .gzh-body{padding:26px 28px;display:flex;flex-direction:column;gap:12px}
+.gzh-card h3{font-weight:900;font-size:21px;line-height:1.35}
+.gzh-card .gzh-desc{font-size:14px;color:var(--ink-2)}
+.gzh-metrics{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+@media(max-width:980px){.ops-grid{grid-template-columns:1fr}.gzh-card{grid-template-columns:1fr}}
+
+/* ============ journey timeline ============ */
+.tl{position:relative;z-index:1;--tw:118px;--tg:16px;max-width:980px;margin:0 auto}
+.tl-row{display:grid;grid-template-columns:var(--tw) 48px 1fr;gap:var(--tg);margin-bottom:26px}
+.tl-time{text-align:right;font-family:"Space Grotesk","Noto Sans SC",sans-serif;font-weight:700;font-size:14.5px;padding-top:20px;line-height:1.4;color:var(--ink-2)}
+.tl-time b{display:block;color:var(--ink);font-size:16px}
+.tl-mid{position:relative;display:grid;justify-items:center}
+.tl-line{position:absolute;top:0;bottom:-50px;width:3px;background:var(--ink);opacity:.22;left:50%;transform:translateX(-50%)}
+.tl-row:last-child .tl-line{bottom:auto;height:18px}
+.tl-dot{position:relative;z-index:1;width:16px;height:16px;border-radius:50%;background:var(--ink);margin-top:24px;box-shadow:0 0 0 4px var(--cream),0 0 0 6px var(--ink)}
+.tl-row.hot .tl-dot{background:var(--g-orange-pink)}
+.tl-card{border:2px solid var(--ink);border-radius:16px;background:var(--paper);padding:18px 22px;transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out)}
+.tl-card:hover{transform:translate(-2px,-2px);box-shadow:var(--shadow-hard-sm)}
+.tl-card h4{font-weight:900;font-size:17px}
+.tl-role{display:inline-block;font-weight:700;font-size:12.5px;color:#fff;background:var(--g-orange-pink);border-radius:999px;padding:3px 12px;margin:8px 0 2px}
+.tl-role.blue{background:var(--g-blue-cyan)}
+.tl-list{font-size:13.5px;color:var(--ink-2);margin-top:8px;list-style:none}
+.tl-list li{position:relative;padding-left:16px;margin-top:5px}
+.tl-list li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+.tl-list b{color:var(--ink)}
+@media(max-width:760px){.tl{--tw:88px;--tg:12px}.tl-time{font-size:12.5px}.tl-time b{font-size:13.5px}.tl-card{padding:15px 16px}}
+
+/* ============ skills ============ */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;position:relative;z-index:1}
+.skill-card{border:2px solid var(--ink);border-radius:18px;background:var(--paper);padding:24px 26px;position:relative;overflow:hidden}
+.skill-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:6px;background:var(--sk-c,var(--g-orange-pink))}
+.skill-card h4{font-weight:900;font-size:19px;display:flex;align-items:center;gap:10px}
+.skill-card .sk-en{font-family:"Space Grotesk",sans-serif;font-size:11px;font-weight:500;color:var(--ink-2);letter-spacing:.1em;margin-top:2px}
+.skill-card p{font-size:13px;color:var(--ink-2);margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.chip{font-size:13px;font-weight:500;background:#fff;border:1.5px solid var(--ink);border-radius:999px;padding:6px 14px;transition:transform .15s,background .15s}
+.chip:hover{transform:translateY(-2px) rotate(-1.5deg);background:var(--yellow)}
+
+/* ============ contact ============ */
+.contact-box{border:2px solid var(--ink);border-radius:26px;background:var(--ink);color:var(--cream);padding:60px 40px;text-align:center;position:relative;overflow:hidden;z-index:1}
+.contact-box::before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 20% 20%,rgba(255,77,18,.4),transparent 45%),radial-gradient(circle at 80% 70%,rgba(36,86,245,.45),transparent 45%);pointer-events:none}
+.contact-box .cb-in{position:relative;z-index:1}
+.contact-box h2{font-size:clamp(32px,4.6vw,54px);font-weight:900;line-height:1.15}
+.contact-box h2 .hl{background:linear-gradient(100deg,#FF9D5C,#FF4D12 40%,#FFC93C);-webkit-background-clip:text;background-clip:text;color:transparent}
+.contact-box .csub{margin-top:16px;font-size:16px;color:rgba(255,255,255,.78)}
+.contact-info{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.info-pill{display:inline-flex;align-items:center;gap:10px;border:1.5px solid rgba(255,255,255,.4);border-radius:999px;padding:11px 22px;font-size:15px;font-weight:500;transition:transform .2s,border-color .2s,background .2s}
+.info-pill:hover{transform:translateY(-3px);border-color:var(--yellow);background:rgba(255,255,255,.08)}
+.info-pill .ic{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--yellow)}
+.contact-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.contact-cta .btn-main{background:var(--cream);color:var(--ink)}
+.contact-cta .btn-main:hover{background:var(--g-orange-pink);color:#fff;box-shadow:8px 8px 0 #FF2E88}
+.contact-cta .btn-light{border-color:rgba(255,255,255,.5);color:var(--cream);background:transparent;box-shadow:none}
+.contact-cta .btn-light:hover{background:var(--blue);border-color:var(--blue);box-shadow:6px 6px 0 #0a1e6e;transform:translate(-2px,-2px)}
+
+/* ============ footer ============ */
+footer{padding:34px 0 44px;border-top:2px solid var(--ink);background:var(--cream)}
+.foot-in{max-width:1240px;margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-2)}
+.foot-in .f-l{font-weight:900;color:var(--ink);font-size:15px}
+.foot-in .f-up{padding:9px 18px;border:2px solid var(--ink);border-radius:999px;background:var(--paper);font-weight:700;color:var(--ink);transition:background .2s,transform .2s}
+.foot-in .f-up:hover{background:var(--lime);transform:translateY(-2px)}
+
+/* ============ lightbox ============ */
+.lb{position:fixed;inset:0;z-index:300;background:rgba(16,11,7,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:60px 20px 40px}
+.lb.open{display:flex}
+.lb-frame{max-width:min(980px,94vw);max-height:76vh;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 24px 70px rgba(0,0,0,.5)}
+.lb-frame img,.lb-frame video{max-width:min(980px,94vw);max-height:76vh;display:block}
+.lb-cap{color:#e9e2d8;font-size:14px;text-align:center;margin-top:16px;max-width:680px;line-height:1.6}
+.lb-btn{position:absolute;width:52px;height:52px;border-radius:50%;border:2px solid rgba(255,255,255,.7);color:#fff;background:transparent;font-size:24px;display:grid;place-items:center;transition:background .2s,border-color .2s,transform .2s;line-height:1}
+.lb-btn:hover{background:var(--orange);border-color:var(--orange);transform:scale(1.06)}
+.lb-close{top:20px;right:24px}
+.lb-prev{left:18px;top:50%;transform:translateY(-50%)}
+.lb-next{right:18px;top:50%;transform:translateY(-50%)}
+.lb-btn:hover.lb-prev,.lb-btn:hover.lb-next{transform:translateY(-50%) scale(1.08)}
+@media(max-width:640px){.lb{padding:56px 10px 30px}.lb-btn{width:44px;height:44px;font-size:18px}.lb-prev{left:8px}.lb-next{right:8px}}
+
+/* ============ reveal & misc ============ */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+section{scroll-margin-top:70px}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+  .blob{display:none}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ===== 导航 ===== -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="回到顶部">
+      <span class="logo-mark">WG</span>
+      <span>王果·作品集</span><span class="lv">新媒体运营 · 成都</span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#works" data-link>作品</a></li>
+        <li><a href="#stats" data-link>战绩</a></li>
+        <li><a href="#journey" data-link>经历</a></li>
+        <li><a href="#skills" data-link>技能</a></li>
+        <li><a href="#contact" data-link>联系</a></li>
+      </ul>
+    </nav>
+    <div class="nav-badge">求职中 · 成都</div>
+    <button class="nav-burger" id="burger" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hgrid"></div>
+    <div class="hring r1"></div>
+    <div class="hring r2"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-grid" id="heroGrid">
+      <div>
+        <div class="hero-eyebrow u1"><span class="erule"></span><span>WANG GUO — 新媒体运营 / 内容运营 · 成都</span><span class="edot"></span></div>
+        <h1 class="u2">
+          <span class="line">把想法做成</span>
+          <span class="line"><span class="word-rotator" role="img" aria-label="流量、爆款、回响、增长轮播"><span class="word w0" aria-hidden="true">流量</span><span class="word w1" aria-hidden="true">爆款</span><span class="word w2" aria-hidden="true">回响</span><span class="word w3" aria-hidden="true">增长</span></span><span class="hl">。</span></span>
+        </h1>
+        <p class="hero-desc u3">我是<b>王果</b>，新媒体运营 / 内容运营方向，坐标成都。<br>
+        做过 100+ 条短视频、200+ 篇公众号、30+ 套直播物料，也亲手搭过一个被 8 位主播日常使用的 <b>AI 提效工具</b>——<br>
+        会想选题、会写文案、会剪片子，更会用数据告诉你下一步往哪儿走。</p>
+        <div class="hero-cta u4">
+          <a class="btn btn-main magnet" href="#works">看我的作品 <span class="arr">→</span></a>
+          <a class="btn btn-ghost magnet" href="#contact">约个面试 <span class="arr">↗</span></a>
+        </div>
+      </div>
+      <aside class="hero-panel u3">
+        <div class="hpanel">
+          <div class="hpanel-head"><span>作品数据快照</span><span class="ld">LIVE</span></div>
+          <div class="hp-row"><span class="hp-idx">01</span><div><div class="hp-num">15<span class="u">W+</span></div><div class="hp-label">单条视频最高播放</div></div></div>
+          <div class="hp-row"><span class="hp-idx">02</span><div><div class="hp-num u2">200<span class="u">+</span></div><div class="hp-label">公众号原创内容</div></div></div>
+          <div class="hp-row"><span class="hp-idx">03</span><div><div class="hp-num">61<span class="u">s→68s</span></div><div class="hp-label">直播停留时长 · 内容改版后</div></div></div>
+          <div class="hpanel-foot"><span>DATA SNAPSHOT</span><span>2026.09</span></div>
+        </div>
+        <div class="rbadge" aria-hidden="true">
+          <svg viewBox="0 0 160 160">
+            <defs><path id="rpath" d="M80,80 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs>
+            <text><textPath href="#rpath" xlink:href="#rpath">内容力 · 数据复盘 · 创意 · 增长 ·</textPath></text>
+          </svg>
+          <span class="rbadge-core">WG</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="mq-track">
+      <div class="mq-dupe">
+        <span class="mq-item">短视频 <span class="star">×100+</span> 条</span><span class="mq-item">公众号 <span class="star">×200+</span> 篇</span><span class="mq-item">直播物料 <span class="star">×30+</span> 套</span><span class="mq-item">AI 提效 <span class="alt">15s→1s</span></span><span class="mq-item">包装设计 <span class="star">×2</span> 套</span>
+      </div>
+      <div class="mq-dupe">
+        <span class="mq-item">短视频 <span class="star">×100+</span> 条</span><span class="mq-item">公众号 <span class="star">×200+</span> 篇</span><span class="mq-item">直播物料 <span class="star">×30+</span> 套</span><span class="mq-item">AI 提效 <span class="alt">15s→1s</span></span><span class="mq-item">包装设计 <span class="star">×2</span> 套</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 账号运营 ===== -->
+<section id="ops">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:34px">
+      <span class="kick"><span class="dot"></span>真实账号 · 真实数据</span>
+      <h2>不止会做内容，还会 <span class="grad-text">看数据、追复盘</span></h2>
+      <p class="sub">教育抖音账号与公众号均为独立运营，数据截图佐证「内容—互动—转化」闭环。</p>
+    </div>
+
+    <div class="ops-grid">
+      <div class="ops-card reveal">
+        <div class="strip" id="douyinStrip">
+          <div class="strip-item" data-lb data-type="img" data-src="01_home.jpg" data-cap="账号主页（一）：置顶视频 14.6W 播放、3.5W 播放。">
+            <img src="01_home.jpg" alt="抖音账号主页" loading="lazy">
+            <div class="sc">账号主页 · 置顶 14.6W</div>
+          </div>
+          <div class="strip-item" data-lb data-type="img" data-src="02_home2.jpg" data-cap="账号主页（二）：粉丝 3.5W、获赞 3.4W，教育赛道定位清晰。">
+            <img src="02_home2.jpg" alt="抖音账号主页2" loading="lazy">
+            <div class="sc">粉丝 3.5W · 获赞 3.4W</div>
+          </div>
+          <div class="strip-item" data-lb data-type="img" data-src="03_data.jpg" data-cap="数据中心·总览：近 7 日互动率 11.54%，完播率 11.59%。">
+            <img src="03_data.jpg" alt="数据中心总览" loading="lazy">
+            <div class="sc">互动率 11.54%</div>
+          </div>
+          <div class="strip-item" data-lb data-type="img" data-src="04_fans.jpg" data-cap="粉丝分析：总粉丝 3.5W，30 日互动粉丝 341。">
+            <img src="04_fans.jpg" alt="粉丝分析" loading="lazy">
+            <div class="sc">30 日互动粉丝 341</div>
+          </div>
+          <div class="strip-item" data-lb data-type="img" data-src="05_portrait.jpg" data-cap="粉丝画像：女性 74%，31-40 岁占比最高，山东粉丝最多——画像反哺选题。">
+            <img src="05_portrait.jpg" alt="粉丝画像" loading="lazy">
+            <div class="sc">女粉 74% · 31-40 岁主力</div>
+          </div>
+        </div>
+        <div class="oc-body">
+          <h3>抖音教育账号 · 独立运营与数据复盘</h3>
+          <p class="oc-desc">从流量、互动、转化三维度建复盘框架：场观、曝光、停留时长、商品点击、成交逐一跟踪，日/周输出复盘报告；用粉丝画像反推选题与内容形式。</p>
+          <div class="ops-stats">
+            <div class="ops-stat"><div class="n">3.5W</div><div class="l">账号粉丝</div></div>
+            <div class="ops-stat"><div class="n">11.54%</div><div class="l">近7日互动率</div></div>
+            <div class="ops-stat"><div class="n">74%</div><div class="l">女性粉丝占比</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gzh-card reveal d1">
+        <div class="gzh-img" data-lb data-type="img" data-src="article_long.jpg" data-cap="公众号资讯长文日常运营实录（足球资讯类账号），单篇阅读 6908，互动区活跃。">
+          <img src="article_long.jpg" alt="公众号文章长截图" loading="lazy">
+        </div>
+        <div class="gzh-body">
+          <h3>公众号 · 独立运营 200+ 篇原创实战</h3>
+          <p class="gzh-desc">实习期间独立负责公众号定位、栏目规划、选题、撰稿、排版到发布全流程；结合阅读量、点赞率、分享率、粉丝增长持续调标题、封面与推送时间。</p>
+          <div class="gzh-metrics">
+            <div class="ops-stat"><div class="n">200+</div><div class="l">原创内容</div></div>
+            <div class="ops-stat"><div class="n">7000+</div><div class="l">单篇最高阅读</div></div>
+            <div class="ops-stat"><div class="n">18.6W+</div><div class="l">累计曝光</div></div>
+            <div class="ops-stat"><div class="n">100+</div><div class="l">种子用户</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 战绩 ===== -->
+<section id="stats">
+  <div class="ghost" aria-hidden="true">STATS</div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick"><span class="dot"></span>用数字说话</span>
+      <h2>内容做得 <span class="grad-text">多不多</span>，数据说了算</h2>
+      <p class="sub">以下数字均来自真实实习与项目经历，可附截图佐证。</p>
+    </div>
+    <div class="stats reveal d1">
+      <div class="stat"><div class="n num" data-count="15" data-suffix="W+">0</div><div class="l">单条视频最高播放</div><div class="d">抖音短视频爆款</div></div>
+      <div class="stat"><div class="n num" data-count="200" data-suffix="+">0</div><div class="l">公众号原创内容</div><div class="d">独立撰稿·排版·发布</div></div>
+      <div class="stat"><div class="n num" data-count="100" data-suffix="+">0</div><div class="l">短视频制作</div><div class="d">拍摄·剪辑·审核全流程</div></div>
+      <div class="stat"><div class="n num" data-count="30" data-suffix="+">0</div><div class="l">直播视觉物料</div><div class="d">海报·贴片·互动卡</div></div>
+      <div class="stat"><div class="n num" data-count="18.6" data-suffix="W+" data-decimals="1">0</div><div class="l">累计内容曝光</div><div class="d">公众号运营期间</div></div>
+      <div class="stat"><div class="n num" data-count="30" data-suffix="">0</div><div class="l">直播全程支持</div><div class="d">场均观看 4300+ 人次</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 作品 ===== -->
+<section id="works">
+  <div class="ghost" aria-hidden="true">WORKS</div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick"><span class="dot"></span>精选作品</span>
+      <h2>每个作品，都配得上一个 <span class="grad-text blue">播放键</span></h2>
+      <p class="sub">短视频、直播物料、AI 提效工具、包装设计、账号运营——点开看，都是真的。</p>
+    </div>
+
+    <div class="filters reveal" id="filters" role="tablist" aria-label="作品分类">
+      <button class="filter on" data-f="all" role="tab">全部</button>
+      <button class="filter" data-f="video" role="tab">短视频</button>
+      <button class="filter" data-f="live" role="tab">直播物料</button>
+      <button class="filter" data-f="tool" role="tab">AI 工具</button>
+      <button class="filter" data-f="design" role="tab">包装设计</button>
+    </div>
+
+    <!-- 卡片网格 -->
+    <div class="works-grid" id="gridWrap">
+
+      <!-- 视频 1：学霸思维对比 -->
+      <article class="wc wide c7 reveal" data-cat="video">
+        <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_xbsi.mp4" data-cap="《学霸思维 vs 普通学生思维》——左右分屏对比讲解，把抽象学习方法变成直观画面。" data-poster="xuebasiwei.jpg">
+          <video src="v_xbsi.mp4" poster="xuebasiwei.jpg" muted playsinline preload="metadata" loop></video>
+          <span class="wc-tag t-video">短视频</span>
+          <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播内容</span><span class="wc-title">学霸思维 vs 普通学生思维</span></div>
+          <p class="wc-desc">「拿到题直接开算」还是「先画图再动手」？一镜到底的双栏对比，把做题思路的差距讲得明明白白。</p>
+          <span class="wc-stat blue">教学短视频 · 54s</span>
+        </div>
+      </article>
+
+      <!-- 视频 2：火车图法 -->
+      <article class="wc c5 reveal d1" data-cat="video">
+        <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_huoche.mp4" data-cap="《火车图法》——情景化例题+趣味互动练习，讲清正向与逆向思考路径。" data-poster="huochefa.jpg">
+          <video src="v_huoche.mp4" poster="huochefa.jpg" muted playsinline preload="metadata" loop></video>
+          <span class="wc-tag t-video">短视频</span>
+          <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播内容</span><span class="wc-title">火车图法·还原问题</span></div>
+          <p class="wc-desc">高铁赶车、大熊猫数量、大胃王挑战——把还原问题放进真实情境，孩子一眼看懂。</p>
+          <span class="wc-stat blue">教学短视频 · 56s</span>
+        </div>
+      </article>
+
+      <!-- 视频 3：拉窗帘 -->
+      <article class="wc reveal" data-cat="video">
+        <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_lachuang.mp4" data-cap="《拉窗帘模型》——几何模型动态演示，转化思维与等积变形一目了然。" data-poster="lamachuang.jpg">
+          <video src="v_lachuang.mp4" poster="lamachuang.jpg" muted playsinline preload="metadata" loop></video>
+          <span class="wc-tag t-video">短视频</span>
+          <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播内容</span><span class="wc-title">拉窗帘模型·等积变形</span></div>
+          <p class="wc-desc">「拉窗帘」三字，让几何面积问题不再靠背。</p>
+          <span class="wc-stat blue">教学短视频 · 18s</span>
+        </div>
+      </article>
+
+      <!-- 视频 4：婆罗摩笈多 -->
+      <article class="wc reveal d1" data-cat="video">
+        <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_boluomojiduo.mp4" data-cap="《婆罗摩笈多模型》——3D 立体模型动画演示，复杂模型一眼看懂。" data-poster="boluomojiduo.jpg">
+          <video src="v_boluomojiduo.mp4" poster="boluomojiduo.jpg" muted playsinline preload="metadata" loop></video>
+          <span class="wc-tag t-video">短视频</span>
+          <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播内容</span><span class="wc-title">婆罗摩笈多模型</span></div>
+          <p class="wc-desc">3D 建模动效演示，几何模型的「为什么」比「是什么」更值得讲。</p>
+          <span class="wc-stat blue">教学短视频 · 15s</span>
+        </div>
+      </article>
+
+      <!-- 视频 5：竖版预告 -->
+      <article class="wc reveal d2" data-cat="video">
+        <div class="wc-media ratio rv" data-lb data-type="video" data-src="v_yugao.mp4" data-cap="竖版课程预告——抖音直播场景投放，节奏紧凑、钩子前置。" data-poster="0827.jpg">
+          <video src="v_yugao.mp4" poster="0827.jpg" muted playsinline preload="metadata" loop></video>
+          <span class="wc-tag t-video">短视频</span>
+          <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播内容</span><span class="wc-title">课程预告 · 竖版</span></div>
+          <p class="wc-desc">抖音直播间投放用竖版预告，前 3 秒给足信息量。</p>
+          <span class="wc-stat blue">抖音竖版 · 16s</span>
+        </div>
+      </article>
+
+      <!-- 课件 1 -->
+      <article class="wc reveal" data-cat="video">
+        <div class="wc-media ratio r169" data-lb data-type="img" data-src="huoche.jpg" data-cap="《火车图法》教学课件——情景化教学 × 趣味互动练习双板块设计。">
+          <img src="huoche.jpg" alt="火车图法教学课件" loading="lazy">
+          <span class="wc-tag t-video">课件设计</span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播内容</span><span class="wc-title">课件·火车图法情景化教学</span></div>
+          <p class="wc-desc">高铁时刻表、大熊猫数量、分饼干——把数学题做成生活剧情。</p>
+          <span class="wc-stat blue">内容制作</span>
+        </div>
+      </article>
+
+      <!-- 课件 2 -->
+      <article class="wc reveal d1" data-cat="video">
+        <div class="wc-media ratio r169" data-lb data-type="img" data-src="xinkegai.jpg" data-cap="《新课改：从解题到解决问题》——原来 vs 现在四维对比课件。">
+          <img src="xinkegai.jpg" alt="新课改课件" loading="lazy">
+          <span class="wc-tag t-video">课件设计</span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播内容</span><span class="wc-title">课件·新课改从解题到解决问题</span></div>
+          <p class="wc-desc">重本质、重应用、跨学科、重培优——给家长的「课改翻译器」。</p>
+          <span class="wc-stat blue">内容制作</span>
+        </div>
+      </article>
+
+      <!-- 直播物料 1 -->
+      <article class="wc reveal" data-cat="live">
+        <div class="wc-media ratio rv" data-lb data-type="img" data-src="poster_299.jpg" data-cap="《299 全年奥数·八大福利》——直播主视觉长图海报，黄黑撞色强钩子。">
+          <img src="poster_299.jpg" alt="299课程福利海报" loading="lazy">
+          <span class="wc-tag t-live">直播物料</span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播视觉</span><span class="wc-title">课程福利主视觉</span></div>
+          <p class="wc-desc">「拍一到手八大福利」——把优惠信息做成一眼读懂的强视觉。</p>
+          <span class="wc-stat amber">直播海报 · 长图</span>
+        </div>
+      </article>
+
+      <!-- 直播物料 2 -->
+      <article class="wc reveal d1" data-cat="live">
+        <div class="wc-media ratio r169" data-lb data-type="img" data-src="interact_90.jpg" data-cap="直播间互动指令卡——「90 以下拍 1 号」，用口令把公屏变成转化现场。">
+          <img src="interact_90.jpg" alt="互动指令卡" loading="lazy">
+          <span class="wc-tag t-live">直播物料</span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播互动</span><span class="wc-title">互动指令卡「拍 1 号」</span></div>
+          <p class="wc-desc">把下单动作拆成三步口令，主播一句话，观众跟着做。</p>
+          <span class="wc-stat amber">互动贴片</span>
+        </div>
+      </article>
+
+      <!-- 直播物料 3 -->
+      <article class="wc reveal d2" data-cat="live">
+        <div class="wc-media ratio r169" data-lb data-type="img" data-src="interact_900.jpg" data-cap="直播间互动指令卡（深色版）——「900 以下拍 1 号」，暗色场景适配版。">
+          <img src="interact_900.jpg" alt="互动指令卡深色版" loading="lazy">
+          <span class="wc-tag t-live">直播物料</span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播互动</span><span class="wc-title">互动指令卡·深色版</span></div>
+          <p class="wc-desc">同一套口令逻辑，按画面场景做配色适配。</p>
+          <span class="wc-stat amber">互动贴片</span>
+        </div>
+      </article>
+
+      <!-- 直播物料 4 -->
+      <article class="wc reveal" data-cat="live">
+        <div class="wc-media ratio rw" data-lb data-type="img" data-src="price_tags.jpg" data-cap="直播间阶梯价目贴片——不同档位对应不同口令。">
+          <img src="price_tags.jpg" alt="阶梯价目贴片" loading="lazy">
+          <span class="wc-tag t-live">直播物料</span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮·直播视觉</span><span class="wc-title">阶梯价目贴片</span></div>
+          <p class="wc-desc">价格阶梯可视化，主播报价不再靠嘴硬记。</p>
+          <span class="wc-stat amber">价格贴片</span>
+        </div>
+      </article>
+
+      <!-- AI 工具 -->
+      <article class="wc wide c12 reveal" data-cat="tool">
+        <div class="wc-media no-click" style="height:420px;background:#0f1117">
+          <iframe src="tool.html" style="position:absolute;inset:0;width:100%;height:100%;border:0" title="小学数学教材版本速查工具演示" loading="lazy"></iframe>
+          <span class="wc-tag t-tool">AI 工具</span>
+        </div>
+        <div class="wc-body">
+          <div class="wc-meta"><span class="wc-name">作业帮 · 用豆包搭建</span><span class="wc-title">小学数学教材版本速查工具</span></div>
+          <p class="wc-desc">痛点：主播回答家长「你们用哪个版本教材」时 KT 板检索平均要 15 秒，新主播更不熟。我独立梳理 280+ 地级市教材版本数据，用豆包 AI 搭建了支持「省+市 / 仅市名」双模式查询的速查工具，把单条咨询检索时间从 15 秒压到 1 秒，已被 8 位主播日常使用。</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+            <span class="wc-stat">15s → 1s 检索提速</span>
+            <span class="wc-stat blue">280+ 地级市数据</span>
+            <span class="wc-stat amber">8 位主播在用</span>
+          </div>
+          <a class="tool-link" href="tool.html" target="_blank" rel="noopener">打开完整版工具 <span class="arr">↗</span></a>
+        </div>
+      </article>
+
+    </div>
+    <p class="reveal" style="font-size:13px;color:var(--ink-2);margin-top:18px;position:relative;z-index:1">* 以上短视频均含完整拍摄 / 剪辑 / 审核流程，AI 生成素材经人工精修后上线；悬停视频可静音预览，点击放大播放。</p>
+  </div>
+</section>
+
+<!-- ===== 包装设计 ===== -->
+<section id="design" style="padding-top:0" data-show="design">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:34px">
+      <span class="kick"><span class="dot"></span>无界·共生 项目</span>
+      <h2>包装设计：<span class="grad-text">山海有灵</span> 与 <span class="grad-text blue">萌趣文具</span></h2>
+      <p class="sub">课程实践项目「无界·共生」，我担任组长：茶里 CHALI × 山海经国潮茶系列、晨光萌趣系文具容器，从品牌调研到实物成品全流程产出。</p>
+    </div>
+
+    <div class="brand-bar reveal">
+      <span class="bname">CHALI × 山海经</span>
+      <span class="bcount">国潮茶 · 5 款</span>
+      <span class="bdesc">白茶·白泽 / 茉莉花茶·青乌 / 桂花乌龙·凤凰 / 红茶·应龙 / 乌龙茶·九尾狐</span>
+    </div>
+    <div class="gallery reveal d1">
+      <div class="g-item feat" data-lb data-type="img" data-src="01_overview.jpg" data-cap="山海茶语系列总览——草图、三视图、3D 效果图三层展示，5 款神兽对应 5 款茶品。">
+        <img src="01_overview.jpg" alt="山海茶语系列设计总览" loading="lazy">
+        <span class="g-cap">设计总览：草图 × 三视图 × 3D 渲染</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="10_poster.jpg" data-cap="《山海茶语》礼盒宣传海报——云雾山峦 × 神兽群像的东方美学。">
+        <img src="10_poster.jpg" alt="山海茶语礼盒海报" loading="lazy">
+        <span class="g-cap">礼盒宣传海报</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="07_tincans.jpg" data-cap="五款铁罐成品陈列——山海有灵，一叶知东方。">
+        <img src="07_tincans.jpg" alt="五款茶叶铁罐" loading="lazy">
+        <span class="g-cap">五款铁罐 · 实物陈列</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="02_hongcha.jpg" data-cap="红茶（应龙）——中国红 × 鎏金祥云 × 应龙纹样，完整食品信息规范。">
+        <img src="02_hongcha.jpg" alt="红茶应龙包装" loading="lazy">
+        <span class="g-cap">红茶·应龙</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="03_baicha.jpg" data-cap="白茶（白泽）——国风山水 × 瑞兽，雅致新中式。">
+        <img src="03_baicha.jpg" alt="白茶白泽包装" loading="lazy">
+        <span class="g-cap">白茶·白泽</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="06_moli.jpg" data-cap="茉莉花茶（青乌）——青绿 × 凤凰花枝，东方茶客。">
+        <img src="06_moli.jpg" alt="茉莉花茶青乌包装" loading="lazy">
+        <span class="g-cap">茉莉花茶·青乌</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="05_guihua.jpg" data-cap="桂花乌龙（凤凰）——深蓝底 × 金色凤凰，浴火重生。">
+        <img src="05_guihua.jpg" alt="桂花乌龙凤凰包装" loading="lazy">
+        <span class="g-cap">桂花乌龙·凤凰</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="04_wulong.jpg" data-cap="乌龙茶（九尾狐）——米黄 × 青绿山水，便携茶罐。">
+        <img src="04_wulong.jpg" alt="乌龙茶九尾狐包装" loading="lazy">
+        <span class="g-cap">乌龙茶·九尾狐</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="08_libox_design.jpg" data-cap="《山海物语》礼盒展开设计稿——色彩、字体、图案、版式、成品全链路拆解。">
+        <img src="08_libox_design.jpg" alt="山海物语礼盒展开设计稿" loading="lazy">
+        <span class="g-cap">礼盒展开设计稿</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="09_libox_real.jpg" data-cap="《山海物语》礼盒实物——深绿 × 金线山水，实物落地质感。">
+        <img src="09_libox_real.jpg" alt="山海物语礼盒实物" loading="lazy">
+        <span class="g-cap">礼盒实物拍摄</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="11_totebag.jpg" data-cap="手提袋设计方案——刀版图、字体、图案、色彩、工艺与材质规范齐全。">
+        <img src="11_totebag.jpg" alt="手提袋设计方案" loading="lazy">
+        <span class="g-cap">手提袋设计规范</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="12_visual_system.jpg" data-cap="海报成品 + 文字 / 图案 / 色彩 / 版式 / 工艺八大板块设计体系。">
+        <img src="12_visual_system.jpg" alt="山海茶语视觉体系" loading="lazy">
+        <span class="g-cap">视觉设计体系</span>
+      </div>
+    </div>
+
+    <div class="brand-bar reveal" style="margin-top:52px">
+      <span class="bname">M&amp;G 晨光</span>
+      <span class="bcount">萌趣系容器 · 5 款</span>
+      <span class="bdesc">中性笔筒 / 荧光笔杯 / 马克笔盒 / 修正带 / 胶棒 · 从容器到吊牌到礼盒</span>
+    </div>
+    <div class="gallery reveal d1">
+      <div class="g-item feat" data-lb data-type="img" data-src="01_poster.jpg" data-cap="《小容器 大创意》——萌趣系容器产品宣传海报，IP 化视觉让文具「会说话」。">
+        <img src="01_poster.jpg" alt="晨光萌趣系容器海报" loading="lazy">
+        <span class="g-cap">主视觉海报</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="03_products_black.jpg" data-cap="五款产品图——黑底陈列，产品信息与卖点分级呈现。">
+        <img src="03_products_black.jpg" alt="晨光五款产品图" loading="lazy">
+        <span class="g-cap">产品陈列图</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="04_white_set.jpg" data-cap="白色系收纳套装——极简白 × 统一 IP，桌面美学。">
+        <img src="04_white_set.jpg" alt="白色系收纳套装" loading="lazy">
+        <span class="g-cap">白色系套装</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="05_hangtags.jpg" data-cap="产品吊牌设计×5——型号 / 规格 / 材质 / 安全提示，合规信息不将就。">
+        <img src="05_hangtags.jpg" alt="晨光产品吊牌" loading="lazy">
+        <span class="g-cap">产品吊牌 ×5</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="02_tote.jpg" data-cap="萌趣系列手提袋——插画风 × 环保油墨 × 棉质提绳。">
+        <img src="02_tote.jpg" alt="晨光手提袋" loading="lazy">
+        <span class="g-cap">手提袋</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="06_tote_flat.jpg" data-cap="手提袋平面视觉展开图——刀版结构 + 设计规范 + 成品效果。">
+        <img src="06_tote_flat.jpg" alt="手提袋展开图" loading="lazy">
+        <span class="g-cap">手提袋展开图</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="07_box_creator.jpg" data-cap="《书写创想家》收纳盒展开图——UV 局部上光 × 烫金工艺。">
+        <img src="07_box_creator.jpg" alt="书写创想家收纳盒" loading="lazy">
+        <span class="g-cap">收纳盒·书写创想家</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="08_box_red.jpg" data-cap="《创新书写 诠释灵感》文具礼盒——晨光品牌红 × 极简几何。">
+        <img src="08_box_red.jpg" alt="创新书写礼盒" loading="lazy">
+        <span class="g-cap">文具礼盒·品牌红</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="09_box_gift.jpg" data-cap="《书写美好 灵感生活》礼盒——清新手绘风，收藏级精致感。">
+        <img src="09_box_gift.jpg" alt="灵感生活礼盒" loading="lazy">
+        <span class="g-cap">礼盒·书写美好</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="10_box_handdraw.jpg" data-cap="《灵感随行》盒体展开——每一笔都是你的光芒。">
+        <img src="10_box_handdraw.jpg" alt="灵感随行盒体" loading="lazy">
+        <span class="g-cap">盒体·灵感随行</span>
+      </div>
+      <div class="g-item" data-lb data-type="img" data-src="11_box_light.jpg" data-cap="《点亮创意》盒体展开——橙蓝活力配色。">
+        <img src="11_box_light.jpg" alt="点亮创意盒体" loading="lazy">
+        <span class="g-cap">盒体·点亮创意</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 经历 ===== -->
+<section id="journey">
+  <div class="ghost" aria-hidden="true">JOURNEY</div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick"><span class="dot"></span>成长路径</span>
+      <h2>从校园到直播间，<span class="grad-text blue">一路做内容</span></h2>
+      <p class="sub">广告学专业打底，两段新媒体实习 + 三个实战项目，边做边复盘。</p>
+    </div>
+    <div class="tl">
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>2026.07—至今</b>作业帮<br>直播运营实习</div>
+        <div class="tl-mid"><span class="tl-dot"></span><span class="tl-line"></span></div>
+        <div class="tl-card">
+          <h4>作业帮（北京学纳百川教育科技）</h4>
+          <span class="tl-role">直播运营实习生</span>
+          <ul class="tl-list">
+            <li>独立完成短视频 <b>100+ 条</b>、直播视觉物料 <b>30+ 套</b>，单条最高播放 <b>15W</b></li>
+            <li>用豆包 AI 搭建教材版本速查工具：检索 <b>15s→1s</b>，8 位主播日常使用</li>
+            <li>「游戏互动式做题视频」改版后：人均停留 <b>61s→68s</b>，商品点击率 <b>11%→16%</b></li>
+            <li>支持 <b>30 场</b> 奥数带货直播，场均观看 4300+ 人次；搭建流量/互动/转化复盘框架</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>2025.07—10</b>三河壹迪<br>新媒体运营实习</div>
+        <div class="tl-mid"><span class="tl-dot"></span><span class="tl-line"></span></div>
+        <div class="tl-card">
+          <h4>三河壹迪文化传媒</h4>
+          <span class="tl-role blue">新媒体运营实习生</span>
+          <ul class="tl-list">
+            <li>公众号定位、栏目规划、选题、撰稿、排版、发布全流程独立负责</li>
+            <li>累计原创 <b>200+ 篇</b>，累计曝光 <b>18.6W+</b>，单篇最高阅读 <b>7000+</b>、点赞 100+</li>
+            <li>用阅读、点赞、分享、粉丝增长数据反推标题 / 封面 / 推送时间，积累种子用户 100+</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>2026.06—07</b>课程项目<br>无界·共生</div>
+        <div class="tl-mid"><span class="tl-dot"></span><span class="tl-line"></span></div>
+        <div class="tl-card">
+          <h4>广告设计项目「无界·共生」（品牌调研 + 包装设计）</h4>
+          <span class="tl-role">项目组长</span>
+          <ul class="tl-list">
+            <li>带队 3 人完成 CHALI、晨光品牌调研，产出 2 份品牌分析报告</li>
+            <li>独立完成晨光容器 / 盒体、CHALI 茶包包装设计，产出 <b>2 套</b>完整包装方案</li>
+            <li>PR 剪辑宣传视频、Maya 参与 3D 建模、AI 合成精修渲染图，交付 35 页作品集 PPT 通过答辩</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>2025.09—10</b>移动运营商<br>开学季拓新</div>
+        <div class="tl-mid"><span class="tl-dot"></span><span class="tl-line"></span></div>
+        <div class="tl-card">
+          <h4>移动运营商开学季拓新项目</h4>
+          <span class="tl-role blue">执行负责人</span>
+          <ul class="tl-list">
+            <li>宿舍走访 <b>120+ 间</b>，积累潜在客户 200+ 人，社群日常维护与转化跟进</li>
+            <li>个人促成开卡 <b>110 张</b>，协助团队开卡 300+ 张，超额 15% 达成目标</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>2025.04—06</b>公益传播<br>猎鹰救援队</div>
+        <div class="tl-mid"><span class="tl-dot"></span><span class="tl-line"></span></div>
+        <div class="tl-card">
+          <h4>仙居猎鹰救援队公益传播与杨梅助销策划</h4>
+          <span class="tl-role">项目组长</span>
+          <ul class="tl-list">
+            <li>PEST / SWOT 调研 + 竞品对比，提出「生命守护者日记」公众号定位与四类栏目</li>
+            <li>策划「猎鹰护航·仙梅」联名杨梅公益助销方案，输出完整策划案与短-长期指标预设</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>2023.09—2027.06</b>应急管理大学<br>广告学·学士</div>
+        <div class="tl-mid"><span class="tl-dot"></span><span class="tl-line"></span></div>
+        <div class="tl-card">
+          <h4>应急管理大学 · 广告学</h4>
+          <span class="tl-role blue">主修课程</span>
+          <ul class="tl-list">
+            <li>广告策划 / 广告文案 / 市场调查与分析 / 短视频剪辑理论与实践</li>
+            <li>广告摄影与摄像 / 包装设计 / 网络传播 / UI 设计</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 技能 ===== -->
+<section id="skills">
+  <div class="ghost" aria-hidden="true">SKILLS</div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick"><span class="dot"></span>工具箱</span>
+      <h2>不是「会的多」，是<span class="grad-text">每个都会用</span></h2>
+      <p class="sub">内容岗要的不是简历上的名词，是拿起来就能干活的手感。</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal" style="--sk-c:var(--g-orange-pink)">
+        <h4>内容运营</h4><div class="sk-en">CONTENT OPS</div>
+        <p>抖音直播 / 短视频 / 公众号全链路：选题策划、文案撰写、拍摄剪辑、图文发布、后台数据调整。</p>
+        <div class="chips"><span class="chip">选题策划</span><span class="chip">文案撰写</span><span class="chip">拍摄剪辑</span><span class="chip">图文排版</span><span class="chip">账号运营</span></div>
+      </div>
+      <div class="skill-card reveal d1" style="--sk-c:var(--g-blue-cyan)">
+        <h4>策划执行</h4><div class="sk-en">PLANNING</div>
+        <p>品牌与受众调研、栏目规划、传播方案、活动策划；社群维护、用户沟通、线下推广执行。</p>
+        <div class="chips"><span class="chip">品牌调研</span><span class="chip">栏目规划</span><span class="chip">活动策划</span><span class="chip">社群维护</span><span class="chip">线下推广</span></div>
+      </div>
+      <div class="skill-card reveal d2" style="--sk-c:var(--g-amber)">
+        <h4>数据分析</h4><div class="sk-en">DATA &amp; REVIEW</div>
+        <p>Excel 函数、数据透视表、图表整理运营数据；按流量 / 互动 / 转化维度写复盘报告。</p>
+        <div class="chips"><span class="chip">Excel 函数</span><span class="chip">数据透视表</span><span class="chip">复盘报告</span><span class="chip">指标归因</span><span class="chip">A/B 对比</span></div>
+      </div>
+      <div class="skill-card reveal" style="--sk-c:var(--g-orange-pink)">
+        <h4>视觉制作</h4><div class="sk-en">VISUAL</div>
+        <p>剪映短视频剪辑、Canva 运营物料、秀米图文排版、PS 基础；包装设计与实物制作实践。</p>
+        <div class="chips"><span class="chip">剪映</span><span class="chip">Canva</span><span class="chip">秀米</span><span class="chip">Photoshop</span><span class="chip">Premiere</span><span class="chip">Maya</span></div>
+      </div>
+      <div class="skill-card reveal d1" style="--sk-c:var(--g-blue-cyan)">
+        <h4>AI 应用</h4><div class="sk-en">AI POWERED</div>
+        <p>ChatGPT / 豆包辅助选题与脚本，即梦 / 可灵生成视频素材，人工精修 + 审核完成内容；用 AI 搭过可用的工具。</p>
+        <div class="chips"><span class="chip">ChatGPT</span><span class="chip">豆包</span><span class="chip">即梦</span><span class="chip">可灵</span><span class="chip">AI 提效流程</span></div>
+      </div>
+      <div class="skill-card reveal d2" style="--sk-c:var(--g-amber)">
+        <h4>沟通协作</h4><div class="sk-en">COLLABORATION</div>
+        <p>直播现场与主播同步脚本、跟进节奏；带队做项目、带群做转化，跨角色沟通顺畅。</p>
+        <div class="chips"><span class="chip">跨角色协同</span><span class="chip">项目带队</span><span class="chip">用户沟通</span><span class="chip">需求梳理</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系 ===== -->
+<section id="contact" style="padding-bottom:110px">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <div class="cb-in">
+        <h2>坐标成都，随时可以<span class="hl">开拍</span>。</h2>
+        <p class="csub">如果你需要一个「会想选题、会做内容、会看数据、还会用 AI 提速」的内容搭子——我们聊聊。</p>
+        <div class="contact-info">
+          <span class="info-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--yellow)"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>四川 · 成都（随时可到岗）</span>
+          <span class="info-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--yellow)"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg>应急管理大学 · 广告学 · 2027 届</span>
+        </div>
+        <div class="contact-cta">
+          <button class="btn btn-main" id="inviteBtn" type="button">发一封面试邀约 <span class="arr">→</span></button>
+          <a class="btn btn-light" href="#works">再逛一圈作品 <span class="arr">↑</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="foot-in">
+    <span class="f-l">王果 · 新媒体运营作品集</span>
+    <span>应急管理大学 · 广告学 · 2027 届 · 求职中</span>
+    <a class="f-up" href="#top">回到顶部 ↑</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ===== 灯箱 ===== -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="作品大图预览">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="关闭">×</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="上一个">‹</button>
+  <div class="lb-frame" id="lbFrame"></div>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="下一个">›</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- 磁吸按钮 ---- */
+  if(!reduce){
+    document.querySelectorAll(".magnet").forEach(function(btn){
+      btn.addEventListener("mousemove", function(e){
+        var r = btn.getBoundingClientRect();
+        var x = e.clientX - (r.left + r.width/2);
+        var y = e.clientY - (r.top + r.height/2);
+        btn.style.transform = "translate(" + (x*.18).toFixed(1) + "px," + (y*.28).toFixed(1) + "px)";
+      });
+      btn.addEventListener("mouseleave", function(){ btn.style.transform = ""; });
+    });
+  }
+
+  /* ---- 顶部滚动进度条 ---- */
+  var prog = document.getElementById("progress");
+  window.addEventListener("scroll", function(){
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    prog.style.width = (max > 0 ? (window.scrollY/max*100) : 0).toFixed(2) + "%";
+  }, {passive:true});
+
+  /* ---- hero 滚动视差 ---- */
+  if(!reduce){
+    var heroGrid = document.getElementById("heroGrid");
+    var heroEl = document.querySelector(".hero");
+    window.addEventListener("scroll", function(){
+      var y = window.scrollY;
+      if(heroEl && y <= heroEl.offsetHeight && y > 0){
+        heroGrid.style.transform = "translateY(" + (y*.16).toFixed(1) + "px)";
+        heroGrid.style.opacity = Math.max(0, 1 - y/heroEl.offsetHeight*1.15).toFixed(2);
+      } else if(heroGrid){
+        heroGrid.style.transform = "";
+        heroGrid.style.opacity = "";
+      }
+    }, {passive:true});
+  }
+
+  /* ---- 移动端导航 ---- */
+  var burger = document.getElementById("burger");
+  var nav = document.getElementById("nav");
+  burger.addEventListener("click", function(){
+    nav.classList.toggle("open");
+    burger.setAttribute("aria-expanded", nav.classList.contains("open"));
+  });
+  nav.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", function(){ nav.classList.remove("open"); });
+  });
+
+  /* ---- 导航高亮 + 平滑滚动 ---- */
+  var links = document.querySelectorAll(".nav-links a");
+  var sections = ["works","stats","journey","skills","contact"].map(function(id){return document.getElementById(id);});
+  window.addEventListener("scroll", function(){
+    var y = window.scrollY + 120, cur = "";
+    sections.forEach(function(s){ if(s && s.offsetTop <= y) cur = s.id; });
+    links.forEach(function(l){
+      l.classList.toggle("on", l.getAttribute("href") === "#" + cur);
+    });
+  }, {passive:true});
+
+  /* ---- 滚动显现 ---- */
+  var revealEls = document.querySelectorAll(".reveal");
+  if(reduce){
+    revealEls.forEach(function(el){ el.classList.add("in"); });
+  } else {
+    if("IntersectionObserver" in window){
+      var ro = new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); ro.unobserve(e.target); } });
+      }, {rootMargin:"0px 0px -8% 0px", threshold:.12});
+      revealEls.forEach(function(el){ ro.observe(el); });
+    } else {
+      revealEls.forEach(function(el){ el.classList.add("in"); });
+    }
+  }
+
+  /* ---- 数字滚动 ---- */
+  var nums = document.querySelectorAll(".stat .n");
+  function runCount(el){
+    var target = parseFloat(el.getAttribute("data-count"));
+    var suf = el.getAttribute("data-suffix") || "";
+    var dec = parseInt(el.getAttribute("data-decimals") || "0", 10);
+    if(reduce || !("IntersectionObserver" in window)){ el.textContent = target.toFixed(dec) + suf; return; }
+    var done = false;
+    var co = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting && !done){
+          done = true; co.unobserve(e.target);
+          var start = null, dur = 1400;
+          function tick(t){
+            if(!start) start = t;
+            var p = Math.min((t - start) / dur, 1);
+            p = 1 - Math.pow(1 - p, 3);
+            el.textContent = (target * p).toFixed(dec) + suf;
+            if(p < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        }
+      });
+    }, {threshold:.5});
+    co.observe(el);
+  }
+  nums.forEach(runCount);
+
+  /* ---- 作品筛选 ---- */
+  var filters = document.querySelectorAll(".filter");
+  var cards = document.querySelectorAll("#gridWrap .wc");
+  var blocks = document.querySelectorAll("[data-show]");
+  function applyFilter(f){
+    filters.forEach(function(btn){
+      var on = btn.getAttribute("data-f") === f;
+      btn.classList.toggle("on", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    cards.forEach(function(c){
+      var show = (f === "all" || c.getAttribute("data-cat") === f);
+      c.classList.toggle("hide", !show);
+    });
+    blocks.forEach(function(b){
+      b.style.display = (f === "all" || b.getAttribute("data-show") === f) ? "" : "none";
+    });
+    /* 隐藏的卡片重新出现时补一次 reveal */
+    if(!reduce){
+      cards.forEach(function(c){
+        if(!c.classList.contains("hide") && !c.classList.contains("in") && c.getBoundingClientRect().top < window.innerHeight){
+          c.classList.add("in");
+        }
+      });
+    }
+  }
+  filters.forEach(function(btn){
+    btn.addEventListener("click", function(){ applyFilter(btn.getAttribute("data-f")); });
+  });
+
+  /* ---- 视频悬停静音预览 ---- */
+  var vids = document.querySelectorAll(".wc-media video");
+  vids.forEach(function(v){
+    if(reduce) return;
+    var media = v.closest(".wc-media");
+    var hoverTimer = null;
+    media.addEventListener("mouseenter", function(){
+      hoverTimer = setTimeout(function(){
+        try{ v.play(); }catch(e){}
+      }, 220);
+    });
+    media.addEventListener("mouseleave", function(){
+      clearTimeout(hoverTimer);
+      try{ v.pause(); v.currentTime = 0; }catch(e){}
+    });
+  });
+
+  /* ---- 灯箱（图片 / 视频） ---- */
+  var lbItems = Array.prototype.slice.call(document.querySelectorAll("[data-lb]"));
+  var lb = document.getElementById("lb"), lbFrame = document.getElementById("lbFrame"), lbCap = document.getElementById("lbCap");
+  var cur = -1;
+  function openLb(i){
+    if(i < 0 || i >= lbItems.length) return;
+    cur = i;
+    var it = lbItems[i];
+    var type = it.getAttribute("data-type");
+    var src = it.getAttribute("data-src");
+    var cap = it.getAttribute("data-cap") || "";
+    lbFrame.innerHTML = "";
+    if(type === "video"){
+      var v = document.createElement("video");
+      v.src = src; v.controls = true; v.autoplay = true; v.playsInline = true;
+      var poster = it.getAttribute("data-poster");
+      if(poster) v.poster = poster;
+      lbFrame.appendChild(v);
+    } else if(src.indexOf(".html") > -1){
+      var fb = document.createElement("div");
+      fb.style.cssText = "width:min(980px,94vw);min-height:60vh;display:grid;place-items:center;color:#8b8fa3;font-size:15px;text-align:center;padding:30px;background:#0f1117";
+      fb.innerHTML = "工具演示页 — <a href='tool.html' target='_blank' rel='noopener' style='color:#60a5fa;text-decoration:underline'>点击在新窗口打开完整版 ↗</a>";
+      lbFrame.appendChild(fb);
+    } else {
+      var img = document.createElement("img");
+      img.src = src; img.alt = "作品大图";
+      lbFrame.appendChild(img);
+    }
+    lbCap.textContent = cap;
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLb(){
+    lb.classList.remove("open");
+    lbFrame.innerHTML = "";
+    document.body.style.overflow = "";
+  }
+  function stepLb(dir){
+    var n = cur + dir;
+    if(n < 0) n = lbItems.length - 1;
+    if(n >= lbItems.length) n = 0;
+    openLb(n);
+  }
+  lbItems.forEach(function(it, i){
+    it.addEventListener("click", function(){ openLb(i); });
+  });
+  document.getElementById("lbClose").addEventListener("click", closeLb);
+  document.getElementById("lbPrev").addEventListener("click", function(){ stepLb(-1); });
+  document.getElementById("lbNext").addEventListener("click", function(){ stepLb(1); });
+  lb.addEventListener("click", function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if(!lb.classList.contains("open")) return;
+    if(e.key === "Escape") closeLb();
+    if(e.key === "ArrowLeft") stepLb(-1);
+    if(e.key === "ArrowRight") stepLb(1);
+  });
+
+  /* ---- 面试邀约 toast ---- */
+  var toast = document.getElementById("toast");
+  var inviteBtn = document.getElementById("inviteBtn");
+  if(inviteBtn && toast){
+    inviteBtn.addEventListener("click", function(){
+      toast.textContent = "期待您的面试邀约——我的联系方式已附在简历中，随时欢迎联系！";
+      toast.classList.add("show");
+      clearTimeout(inviteBtn._t);
+      inviteBtn._t = setTimeout(function(){ toast.classList.remove("show"); }, 2800);
+    });
+  }
+})();
+</script>
+</body>
+</html>
+</body>
+</html>
