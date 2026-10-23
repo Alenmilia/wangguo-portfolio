@@ -283,6 +283,8 @@ section{position:relative;padding:110px 0}
 .wc-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,12,6,.55));pointer-events:none;opacity:0;transition:opacity .3s}
 .wc:hover .wc-media::after{opacity:1}
 .wc-media img,.wc-media video{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease-out)}
+.wc-media .vid-cover{position:absolute;inset:0;z-index:1;pointer-events:none;transition:opacity .25s var(--ease-out);}
+.wc:hover .vid-cover{opacity:0;}
 .wc:hover .wc-media img,.wc:hover .wc-media video{transform:scale(1.045)}
 .wc-media .ratio{aspect-ratio:4/3;display:block}
 .wc-media .ratio.r169{aspect-ratio:16/9}
@@ -645,6 +647,7 @@ section{scroll-margin-top:70px}
       <article class="wc wide c7 reveal" data-cat="video">
         <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_xbsi.mp4" data-cap="《学霸思维 vs 普通学生思维》——左右分屏对比讲解，把抽象学习方法变成直观画面。" data-poster="xuebasiwei.jpg">
           <video src="v_xbsi.mp4" poster="xuebasiwei.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="xuebasiwei.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
@@ -659,6 +662,7 @@ section{scroll-margin-top:70px}
       <article class="wc c5 reveal d1" data-cat="video">
         <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_huoche.mp4" data-cap="《火车图法》——情景化例题+趣味互动练习，讲清正向与逆向思考路径。" data-poster="huochefa.jpg">
           <video src="v_huoche.mp4" poster="huochefa.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="huochefa.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
@@ -673,6 +677,7 @@ section{scroll-margin-top:70px}
       <article class="wc reveal" data-cat="video">
         <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_lachuang.mp4" data-cap="《拉窗帘模型》——几何模型动态演示，转化思维与等积变形一目了然。" data-poster="lamachuang.jpg">
           <video src="v_lachuang.mp4" poster="lamachuang.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="lamachuang.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
@@ -687,6 +692,7 @@ section{scroll-margin-top:70px}
       <article class="wc reveal d1" data-cat="video">
         <div class="wc-media ratio r169" data-lb data-type="video" data-src="v_boluomojiduo.mp4" data-cap="《婆罗摩笈多模型》——3D 立体模型动画演示，复杂模型一眼看懂。" data-poster="boluomojiduo.jpg">
           <video src="v_boluomojiduo.mp4" poster="boluomojiduo.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="boluomojiduo.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
@@ -701,6 +707,7 @@ section{scroll-margin-top:70px}
       <article class="wc reveal d2" data-cat="video">
         <div class="wc-media ratio rv" data-lb data-type="video" data-src="v_yugao.mp4" data-cap="竖版课程预告——抖音直播场景投放，节奏紧凑、钩子前置。" data-poster="0827.jpg">
           <video src="v_yugao.mp4" poster="0827.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="0827.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
@@ -715,6 +722,7 @@ section{scroll-margin-top:70px}
       <article class="wc reveal" data-cat="video">
         <div class="wc-media ratio rv" data-lb data-type="video" data-src="v_koubo.mp4" data-cap="家长愧疚视角情景口播——情绪钩子前置，共情后衔接学习平板与《小学奥数思维》练习册产品展示。" data-poster="koubo.jpg">
           <video src="v_koubo.mp4" poster="koubo.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="koubo.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
@@ -729,6 +737,7 @@ section{scroll-margin-top:70px}
       <article class="wc reveal d1" data-cat="video">
         <div class="wc-media ratio rv" data-lb data-type="video" data-src="v_hundian.mp4" data-cap="AI 动画混剪——高对比字幕钩子开场，口诀动画演示「填相同的数」等量关系题型。" data-poster="hundian.jpg">
           <video src="v_hundian.mp4" poster="hundian.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="hundian.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
@@ -743,6 +752,7 @@ section{scroll-margin-top:70px}
       <article class="wc reveal d2" data-cat="video">
         <div class="wc-media ratio rv" data-lb data-type="video" data-src="v_zouxin.mp4" data-cap="多场景走心口播混剪——几何动画、产品讲解、教研白板依次推进「贴合校内进度、一题多种讲法」卖点。" data-poster="zouxin.jpg">
           <video src="v_zouxin.mp4" poster="zouxin.jpg" muted playsinline preload="metadata" loop></video>
+          <img class="vid-cover" src="zouxin.jpg" alt="作品封面" loading="lazy">
           <span class="wc-tag t-video">短视频</span>
           <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14z"/></svg></span>
         </div>
