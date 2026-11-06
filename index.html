@@ -460,6 +460,60 @@ section{scroll-margin-top:70px}
   .reveal{opacity:1;transform:none}
   .blob{display:none}
 }
+
+/* ===== 2026 blue-white enterprise refresh ===== */
+:root{--cream:#f3f7fb;--paper:#ffffff;--ink:#18344f;--ink-2:#526a80;--line:#d8e4ef;--orange:#1769aa;--pink:#3b82c4;--blue:#155b96;--cyan:#73b7e8;--lime:#dceefa;--yellow:#dceefa;--g-orange-pink:linear-gradient(100deg,#145b94 0%,#3b82c4 100%);--g-blue-cyan:linear-gradient(100deg,#1c6ca8 0%,#83bce5 100%);--g-amber:linear-gradient(100deg,#4b8dbd 0%,#1769aa 100%);--g-ink:linear-gradient(100deg,#18344f,#526a80);--shadow-hard:0 12px 32px rgba(24,52,79,.10);--shadow-hard-sm:0 4px 14px rgba(24,52,79,.10)}
+body{background:var(--cream);color:var(--ink)}
+body::before{display:none}
+.nav{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav-in{height:72px}
+.logo-mark{background:var(--navy,#18344f);border-radius:9px;color:#fff}
+.nav-links a:hover{background:#eaf3fb}
+.nav-badge{background:var(--g-blue-cyan);box-shadow:none;border-radius:7px}
+section{padding-top:88px;padding-bottom:88px}
+.sec-head .kick{border:1px solid #b8cddd;background:#fff;color:#24577e;border-radius:6px}
+.sec-head .kick .dot{background:#287bb7}
+.sec-head h2{color:#18344f}
+.grad-text,.grad-text.blue{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{background:linear-gradient(135deg,#fff 0%,#edf5fb 100%);min-height:80vh}
+.hero-bg .hgrid{background-image:linear-gradient(rgba(24,52,79,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(24,52,79,.045) 1px,transparent 1px)}
+.hring{border-color:rgba(24,52,79,.13)}
+.hring::after,.hring.r2::after{background:#2b7bb5}
+.hero h1{color:#18344f}
+.hero h1 .hl,.hero h1 .word-rotator .word{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hpanel,.stats,.wc,.tool-feature,.skill-card,.tl-card,.ops-card,.gzh-card{border:1px solid var(--line);box-shadow:0 10px 28px rgba(24,52,79,.07);border-radius:12px}
+.hpanel::before{background:var(--g-blue-cyan)}
+.hpanel-head,.hp-row{border-color:var(--line)}
+.hp-row:hover{background:#f2f7fb}
+.hpanel-foot{background:#18344f}
+.rbadge-core{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{border-radius:7px;border:1px solid #1769aa}
+.btn-main{background:#1769aa;color:#fff;box-shadow:none}
+.btn-main:hover{background:#104d7d;color:#fff;box-shadow:0 8px 18px rgba(23,105,170,.2)}
+.btn-ghost{background:#fff;box-shadow:none;color:#1769aa}
+.btn-ghost:hover{background:#eaf3fb;box-shadow:none}
+.marquee{background:#18344f;border-color:#18344f}
+.stat{border-color:var(--line)}
+.stat:hover{background:#f2f7fb}
+.stat::before{background:var(--g-blue-cyan)}
+.stat .n,.stat:nth-child(n) .n{background:var(--g-blue-cyan);-webkit-background-clip:text;background-clip:text;color:transparent}
+.filter{border:1px solid #b8cddd;border-radius:6px;background:#fff}
+.filter:hover{background:#eaf3fb;box-shadow:none;transform:translateY(-1px)}
+.filter.on{background:#1769aa;color:#fff;border-color:#1769aa}
+.wc:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(24,52,79,.12)}
+.wc-tag{border-radius:4px;background:#1769aa}
+.t-video,.t-live,.t-tool,.t-design,.t-ops{background:#1769aa}
+.wc-stat{background:#e8f3fb;border:1px solid #b8d4e8;color:#24577e;border-radius:4px}
+.wc-stat.blue,.wc-stat.amber{background:#e8f3fb}
+.tool-right{border-color:var(--line)}
+.tool-link{background:#1769aa;box-shadow:none;border-radius:6px}
+.brand-bar{background:#eaf3fb;border-color:#c9ddeb}
+.contact-box{background:#18344f}
+footer{background:#fff;border-top:1px solid var(--line)}
+.foot-in .f-up{border:1px solid #b8cddd;border-radius:6px;background:#fff}
+.toast{background:#18344f;box-shadow:0 8px 22px rgba(24,52,79,.18)}
+@media(max-width:860px){.nav-links{background:#fff;border-color:var(--line)}}
+
 </style>
 </head>
 <body>
@@ -470,7 +524,7 @@ section{scroll-margin-top:70px}
   <div class="nav-in">
     <a class="logo" href="#top" aria-label="回到顶部">
       <span class="logo-mark">WG</span>
-      <span>王果·作品集</span><span class="lv">新媒体运营</span>
+      <span>王果·作品集</span><span class="lv">新媒体内容运营</span>
     </a>
     <nav>
       <ul class="nav-links" id="navLinks">
@@ -481,7 +535,7 @@ section{scroll-margin-top:70px}
         <li><a href="#contact" data-link>联系</a></li>
       </ul>
     </nav>
-    <div class="nav-badge">求职中</div>
+    <a class="nav-badge" href="brand.html" aria-label="切换品牌策划与传播版">切换：品牌策划版 ↗</a>
     <button class="nav-burger" id="burger" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -496,12 +550,12 @@ section{scroll-margin-top:70px}
   <div class="wrap">
     <div class="hero-grid" id="heroGrid">
       <div>
-        <div class="hero-eyebrow u1"><span class="erule"></span><span>WANG GUO — 新媒体运营 / 内容运营</span><span class="edot"></span></div>
+        <div class="hero-eyebrow u1"><span class="erule"></span><span>WANG GUO — 新媒体内容运营</span><span class="edot"></span></div>
         <h1 class="u2">
           <span class="line">把想法做成</span>
           <span class="line"><span class="word-rotator" role="img" aria-label="流量、爆款、回响、增长轮播"><span class="word w0" aria-hidden="true">流量</span><span class="word w1" aria-hidden="true">爆款</span><span class="word w2" aria-hidden="true">回响</span><span class="word w3" aria-hidden="true">增长</span></span><span class="hl">。</span></span>
         </h1>
-        <p class="hero-desc u3">我是<b>王果</b>，新媒体运营 / 内容运营方向，。<br>
+        <p class="hero-desc u3">我是<b>王果</b>，新媒体内容运营方向。<br>
         做过 100+ 条短视频、200+ 篇公众号、30+ 套直播物料，也亲手搭过一个被 8 位主播日常使用的 <b>AI 提效工具</b>——<br>
         会想选题、会写文案、会剪片子，更会用数据告诉你下一步往哪儿走。</p>
         <div class="hero-cta u4">
